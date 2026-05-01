@@ -1,0 +1,688 @@
+[
+  {
+    "id": 220215,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 82107,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Hubert (Hubert) Wesley Gill",
+        "email": "n00005746@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [
+          "monday",
+          "wednesday"
+        ],
+        "startTime": {
+          "hour": 12,
+          "minute": 0
+        },
+        "endTime": {
+          "hour": 13,
+          "minute": 15
+        },
+        "type": "class",
+        "building": "42-coggin college of business",
+        "room": "1101",
+        "isOnline": false,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Main Campus-UNF",
+    "status": {
+      "isFull": true,
+      "seatsRemaining": 0,
+      "totalSeats": 43,
+      "waitlistRemaining": 5,
+      "waitlistTotal": 5
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  },
+  {
+    "id": 220216,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 82108,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Hubert (Hubert) Wesley Gill",
+        "email": "n00005746@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [
+          "monday",
+          "wednesday"
+        ],
+        "startTime": {
+          "hour": 15,
+          "minute": 0
+        },
+        "endTime": {
+          "hour": 16,
+          "minute": 15
+        },
+        "type": "class",
+        "building": "42-coggin college of business",
+        "room": "1101",
+        "isOnline": false,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Main Campus-UNF",
+    "status": {
+      "isFull": false,
+      "seatsRemaining": 22,
+      "totalSeats": 43,
+      "waitlistRemaining": 5,
+      "waitlistTotal": 5
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  },
+  {
+    "id": 221613,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 83505,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Hubert (Hubert) Wesley Gill",
+        "email": "n00005746@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [],
+        "startTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "endTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "type": "class",
+        "building": "online",
+        "room": "none",
+        "isOnline": true,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Distance Learning",
+    "status": {
+      "isFull": true,
+      "seatsRemaining": 0,
+      "totalSeats": 50,
+      "waitlistRemaining": 10,
+      "waitlistTotal": 10
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  },
+  {
+    "id": 221614,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 83506,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Hubert (Hubert) Wesley Gill",
+        "email": "n00005746@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [],
+        "startTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "endTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "type": "class",
+        "building": "online",
+        "room": "none",
+        "isOnline": true,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Distance Learning",
+    "status": {
+      "isFull": false,
+      "seatsRemaining": 18,
+      "totalSeats": 50,
+      "waitlistRemaining": 10,
+      "waitlistTotal": 10
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  },
+  {
+    "id": 222062,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 83954,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Cynthia (Cynthia) Norenberg",
+        "email": "n00056596@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [
+          "tuesday",
+          "thursday"
+        ],
+        "startTime": {
+          "hour": 13,
+          "minute": 40
+        },
+        "endTime": {
+          "hour": 14,
+          "minute": 55
+        },
+        "type": "class",
+        "building": "42-coggin college of business",
+        "room": "1102",
+        "isOnline": false,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Main Campus-UNF",
+    "status": {
+      "isFull": true,
+      "seatsRemaining": 0,
+      "totalSeats": 43,
+      "waitlistRemaining": 0,
+      "waitlistTotal": 5
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  },
+  {
+    "id": 222063,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 83955,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Cynthia (Cynthia) Norenberg",
+        "email": "n00056596@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [
+          "tuesday",
+          "thursday"
+        ],
+        "startTime": {
+          "hour": 10,
+          "minute": 50
+        },
+        "endTime": {
+          "hour": 12,
+          "minute": 5
+        },
+        "type": "class",
+        "building": "42-coggin college of business",
+        "room": "1102",
+        "isOnline": false,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Main Campus-UNF",
+    "status": {
+      "isFull": true,
+      "seatsRemaining": 0,
+      "totalSeats": 43,
+      "waitlistRemaining": 0,
+      "waitlistTotal": 5
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  },
+  {
+    "id": 222064,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 83956,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Cynthia (Cynthia) Norenberg",
+        "email": "n00056596@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [
+          "tuesday",
+          "thursday"
+        ],
+        "startTime": {
+          "hour": 9,
+          "minute": 25
+        },
+        "endTime": {
+          "hour": 10,
+          "minute": 40
+        },
+        "type": "class",
+        "building": "42-coggin college of business",
+        "room": "1102",
+        "isOnline": false,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Main Campus-UNF",
+    "status": {
+      "isFull": true,
+      "seatsRemaining": 0,
+      "totalSeats": 43,
+      "waitlistRemaining": 0,
+      "waitlistTotal": 5
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  },
+  {
+    "id": 222065,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 83957,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Cynthia (Cynthia) Norenberg",
+        "email": "n00056596@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [
+          "wednesday"
+        ],
+        "startTime": {
+          "hour": 16,
+          "minute": 30
+        },
+        "endTime": {
+          "hour": 17,
+          "minute": 45
+        },
+        "type": "hybrid",
+        "building": "42-coggin college of business",
+        "room": "1101",
+        "isOnline": false,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      },
+      {
+        "days": [],
+        "startTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "endTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "type": "hybrid",
+        "building": "online",
+        "room": "none",
+        "isOnline": true,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Hybrid - On Campus/Online",
+    "status": {
+      "isFull": true,
+      "seatsRemaining": 0,
+      "totalSeats": 43,
+      "waitlistRemaining": 5,
+      "waitlistTotal": 5
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  },
+  {
+    "id": 222066,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 83958,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Robert (Robert) D Slater",
+        "email": "n00631858@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [
+          "tuesday"
+        ],
+        "startTime": {
+          "hour": 15,
+          "minute": 5
+        },
+        "endTime": {
+          "hour": 16,
+          "minute": 20
+        },
+        "type": "hybrid",
+        "building": "39a-j. brooks brown hall addit",
+        "room": "1034",
+        "isOnline": false,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      },
+      {
+        "days": [],
+        "startTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "endTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "type": "hybrid",
+        "building": "online",
+        "room": "none",
+        "isOnline": true,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Hybrid - On Campus/Online",
+    "status": {
+      "isFull": false,
+      "seatsRemaining": 9,
+      "totalSeats": 43,
+      "waitlistRemaining": 5,
+      "waitlistTotal": 5
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  },
+  {
+    "id": 222071,
+    "errorTriggered": false,
+    "title": "Principles of Financial Accounting",
+    "subject": "ACG",
+    "subjectDesc": "Accounting: General",
+    "courseNumber": 2021,
+    "sectionNumber": 0,
+    "creditHours": 3,
+    "crn": 83963,
+    "term": "Fall 2026",
+    "instructor": [
+      {
+        "name": "Robert (Robert) D Slater",
+        "email": "n00631858@unf.edu",
+        "isPrimary": true
+      }
+    ],
+    "meetings": [
+      {
+        "days": [
+          "tuesday"
+        ],
+        "startTime": {
+          "hour": 16,
+          "minute": 30
+        },
+        "endTime": {
+          "hour": 17,
+          "minute": 45
+        },
+        "type": "hybrid",
+        "building": "39a-j. brooks brown hall addit",
+        "room": "1030",
+        "isOnline": false,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      },
+      {
+        "days": [],
+        "startTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "endTime": {
+          "hour": 0,
+          "minute": 0
+        },
+        "type": "hybrid",
+        "building": "online",
+        "room": "none",
+        "isOnline": true,
+        "startDate": {
+          "year": 2026,
+          "month": 8,
+          "day": 17
+        },
+        "endDate": {
+          "year": 2026,
+          "month": 12,
+          "day": 11
+        }
+      }
+    ],
+    "campus": "Hybrid - On Campus/Online",
+    "status": {
+      "isFull": false,
+      "seatsRemaining": 37,
+      "totalSeats": 43,
+      "waitlistRemaining": 5,
+      "waitlistTotal": 5
+    },
+    "scheduleType": "Class",
+    "attributes": [
+      "Undergraduate Level Course"
+    ],
+    "linked": []
+  }
+]
