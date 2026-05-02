@@ -14,11 +14,11 @@ struct CourseData {
     std::string course_name;
     Teacher teacher;
     std::uint8_t crn;
-    std::string start_time;
-    std::string end_time;
+    Time24Hour start_time;
+    Time24Hour end_time;
 
     CourseData() = default;
-    CourseData(const std::string& cname, Teacher teach, std::uint8_t crn, std::string start_time, std::string end_time)
+    CourseData(const std::string& cname, Teacher teach, std::uint8_t crn, Time24Hour start_time, Time24Hour end_time)
         : course_name{cname}, teacher{teach}, crn{crn}, start_time{start_time}, end_time{end_time} {};
     CourseData(const CourseData& other)
         : course_name{other.course_name}, teacher{other.teacher}, crn{other.crn}, start_time{other.start_time}, end_time{other.end_time} {};
@@ -37,35 +37,22 @@ struct CourseData {
 };
 
 
-struct Time {
+/** Stores the time in 24 hour standard */
+struct Time24Hour {
     int hour;
     int minute;
-    std::string time_of_day;
-
 };
 
-Time string_to_time(const std::string& time_string) {
-    std::string hour = "";
-    int i = 0;
-    for(;time_string[i] != ':'; i++) {
-        hour += time_string[i];
-    }
-    i++;
-    std::string minute = "";
+/** Support << streaming for the Time24Hour struct */
+std::ostream& operator<<(std::ostream& os, const Time24Hour& t) {
+    if (t.hour < 10) os << "0";
+    os << t.hour << ":";
 
-    for(;time_string[i] != ' '; i++) {
-        minute += time_string[i];
-    }
+    if (t.minute < 10) os << "0";
+    os << t.minute;
 
-    std::string time_of_day = "";
-    for(;i < time_string.size(); i++) {
-        time_of_day += time_string[i];
-    }
-
-    return Time{std::stoi(hour), std::stoi(minute), time_of_day};
+    return os;
 }
-
-
 
 void print_queries(const std::vector<CourseData>& vec) {
     std::cout << "{\n";
@@ -76,24 +63,15 @@ void print_queries(const std::vector<CourseData>& vec) {
 }
 
 bool valid_times_helper(const CourseData& a, const CourseData& b) {
-    Time as = string_to_time(a.start_time);
-    Time ae = string_to_time(a.end_time);
-    Time bs = string_to_time(b.start_time);
-    Time be = string_to_time(b.end_time);
     //check if a start time is within b start and end time
-    if(as.hour >= bs.hour && as.hour <= be.hour) {
-        //check time of day
-        if(as.time_of_day == bs.time_of_day || as.time_of_day == be.time_of_day)
-            return false;
+    if(a.start_time.hour >= b.start_time.hour && a.start_time.hour <= b.start_time.hour) {
+        return false;
     }
-    if(ae.hour >= bs.hour && ae.hour <= be.hour) {
-          if(ae.time_of_day == bs.time_of_day || ae.time_of_day == be.time_of_day)
-            return false;
-
+    if(a.end_time.hour >= b.start_time.hour && a.end_time.hour <= b.end_time.hour) {
+        return false;
     }
 
     return true;
-
 }
 
 bool validate_times(const CourseData& looking_at, const std::vector<CourseData>& already_added) {
@@ -130,10 +108,10 @@ void permute_filtered_courses(const std::vector<CourseData>& filtered_pool,
 
 
 int main(int argc, char** argv)
-{   CourseData cop_dummy1{"COP", Teacher{"Tim", "Bob"}, 1, "12:30 PM", "01:45 PM"};
-    CourseData cop_dummy2{"COP", Teacher{"Jim", "Sob"}, 1, "02:00 PM", "03:40 PM"};
-    CourseData cot_dummy1{"COT", Teacher{"Lim", "Nom"}, 1, "02:05 PM", "03:45 PM"};
-    CourseData cot_dummy2{"COT", Teacher{"Stim", "Murmer"}, 1, "02:05 AM", "03:45 AM"};
+{   CourseData cop_dummy1{"COP", Teacher{"Tim", "Bob"}, 1, Time24Hour{12, 30}, Time24Hour{13, 45}};
+    CourseData cop_dummy2{"COP", Teacher{"Jim", "Sob"}, 1, Time24Hour{14, 0}, Time24Hour{15, 40}};
+    CourseData cot_dummy1{"COT", Teacher{"Lim", "Nom"}, 1, Time24Hour{14, 5}, Time24Hour{15, 45}};
+    CourseData cot_dummy2{"COT", Teacher{"Stim", "Murmer"}, 1, Time24Hour{2, 5}, Time24Hour{3, 45}};
 
     std::vector<std::string> courses_to_query = {"COT", "COP"};
     std::vector<CourseData> courses = {cop_dummy1, cop_dummy2, cot_dummy1, cot_dummy2};
