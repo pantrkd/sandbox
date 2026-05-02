@@ -2,6 +2,8 @@
 #include <vector>
 #include <unordered_map>
 #include <algorithm>
+#include <cstdint>
+#include <string>
 
 struct Teacher {
     std::string first_name;
@@ -60,9 +62,7 @@ Time string_to_time(const std::string& time_string) {
         time_of_day += time_string[i];
     }
 
-    return { .hour = std::stoi(hour), .minute = std::stoi(minute), .time_of_day = time_of_day };
-
-
+    return Time{std::stoi(hour), std::stoi(minute), time_of_day};
 }
 
 
@@ -130,10 +130,10 @@ void permute_filtered_courses(const std::vector<CourseData>& filtered_pool,
 
 
 int main(int argc, char** argv)
-{   CourseData cop_dummy1{"COP", .teacher = {.first_name = "Tim", .last_name = "Bob"}, 1, "12:30 PM", "01:45 PM"};
-    CourseData cop_dummy2{"COP", .teacher = {.first_name = "Jim", .last_name = "Sob"}, 1, "02:00 PM", "03:40 PM"};
-    CourseData cot_dummy1{"COT", .teacher = {.first_name = "Lim", .last_name = "Nom"}, 1, "02:05 PM", "03:45 PM"};
-    CourseData cot_dummy2{"COT", .teacher = {.first_name = "Stim", .last_name = "Murmer"}, 1, "02:05 AM", "03:45 AM"};
+{   CourseData cop_dummy1{"COP", Teacher{"Tim", "Bob"}, 1, "12:30 PM", "01:45 PM"};
+    CourseData cop_dummy2{"COP", Teacher{"Jim", "Sob"}, 1, "02:00 PM", "03:40 PM"};
+    CourseData cot_dummy1{"COT", Teacher{"Lim", "Nom"}, 1, "02:05 PM", "03:45 PM"};
+    CourseData cot_dummy2{"COT", Teacher{"Stim", "Murmer"}, 1, "02:05 AM", "03:45 AM"};
 
     std::vector<std::string> courses_to_query = {"COT", "COP"};
     std::vector<CourseData> courses = {cop_dummy1, cop_dummy2, cot_dummy1, cot_dummy2};
