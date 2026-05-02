@@ -71,6 +71,10 @@ void print_queries(const std::vector<CourseData> &vec) {
   std::cout << "}";
 }
 
+/** 
+ * Compares a and b to determine whether the times overlap
+ * @returns true if no conflict, else false
+ */
 bool valid_times_helper(const CourseData &a, const CourseData &b) {
   // check if a start time is within b start and end time
   if (a.start_time.hour >= b.start_time.hour &&
