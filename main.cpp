@@ -29,11 +29,19 @@ concept TimeStampable = requires(Ty v) {
 
 /**
  * @brief Represents a time in 24-hour format.
+ * @throws TimeRangeException Hour [0-23] Minute [0-59]
  */
+
 struct TimeStamp {
     int hour;    ///< Hour component [0–23]
     int minute;  ///< Minute component [0–59]
 
+    TimeStamp(int hour, int minute) {
+        if (hour < 0 || hour > 23) throw std::runtime_error("TimeRangeException [H: " + std::to_string(hour) + "]");
+        if (minute < 0 || minute > 59) throw std::runtime_error("TimeRangeException [M: " + std::to_string(minute) + "]");
+        this->hour = hour;
+        this->minute = minute;
+    }
     /**
      * @brief Namespace-like container for time-related algorithms.
      */
@@ -287,6 +295,9 @@ int main(int argc, char** argv) {
     std::vector<std::string> courses_to_query = {"COT", "COP"};
     Scheduler s{cop_dummy1, cop_dummy2, cot_dummy1,
                 cot_dummy2};
+    // in the future this will take query objects that each contain a predicate based on what the course data entails.
+    // notice how we are only passing the course name as strings my goal is to have something like
+    // s.permute_courses(QueryByName{"COT", "COP"}, QueryByValidTimeRange{TimeStamp{0, 0}, TimeStamp{10, 30}});
     auto possibilities = s.permute_courses("COT", "COP");
     for (const auto& p : possibilities) {
         print_queries(p);
