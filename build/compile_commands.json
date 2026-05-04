@@ -1,7 +1,7 @@
 [
 {
   "directory": "C:/Users/aryas/OneDrive/Desktop/C++Projects/scheduler_algorithm/build",
-  "command": "C:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\scheduler_algorithm.dir\\main.cpp.obj -c C:\\Users\\aryas\\OneDrive\\Desktop\\C++Projects\\scheduler_algorithm\\main.cpp",
+  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++20 -o CMakeFiles\\scheduler_algorithm.dir\\main.cpp.obj -c C:\\Users\\aryas\\OneDrive\\Desktop\\C++Projects\\scheduler_algorithm\\main.cpp",
   "file": "C:/Users/aryas/OneDrive/Desktop/C++Projects/scheduler_algorithm/main.cpp",
   "output": "CMakeFiles/scheduler_algorithm.dir/main.cpp.obj"
 }
