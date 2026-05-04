@@ -36,12 +36,14 @@ struct TimeStamp {
     int hour;    ///< Hour component [0–23]
     int minute;  ///< Minute component [0–59]
 
+    TimeStamp() = default;
     TimeStamp(int hour, int minute) {
         if (hour < 0 || hour > 23) throw std::runtime_error("TimeRangeException [H: " + std::to_string(hour) + "]");
         if (minute < 0 || minute > 59) throw std::runtime_error("TimeRangeException [M: " + std::to_string(minute) + "]");
         this->hour = hour;
         this->minute = minute;
     }
+    TimeStamp(const TimeStamp& o) : hour(o.hour), minute(o.minute) {};
     /**
      * @brief Namespace-like container for time-related algorithms.
      */
@@ -86,6 +88,27 @@ struct TimeStamp {
                 });
         }
     };
+
+    /**
+     * @brief Stream operator for TimeStamp.
+     *
+     * Outputs time in HH:MM format.
+     *
+     * @param os Output stream.
+     * @param t TimeStamp instance.
+     * @return std::ostream&
+     */
+    friend std::ostream& operator<<(std::ostream& os, const TimeStamp& ts) {
+        if (ts.hour < 10)
+            os << "0";
+        os << ts.hour << ":";
+
+        if (ts.minute < 10)
+            os << "0";
+        os << ts.minute;
+
+        return os;
+    }
 };
 
 /**
@@ -135,27 +158,6 @@ struct CourseData {
     /// Destructor
     ~CourseData() = default;
 };
-
-/**
- * @brief Stream operator for TimeStamp.
- *
- * Outputs time in HH:MM format.
- *
- * @param os Output stream.
- * @param t TimeStamp instance.
- * @return std::ostream&
- */
-std::ostream& operator<<(std::ostream& os, const TimeStamp& t) {
-    if (t.hour < 10)
-        os << "0";
-    os << t.hour << ":";
-
-    if (t.minute < 10)
-        os << "0";
-    os << t.minute;
-
-    return os;
-}
 
 /**
  * @brief Prints a list of course schedules.
