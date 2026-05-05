@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Users/aryas/OneDrive/Desktop/C++Projects/pantrkd/sandbox/build",
-  "command": "C:\\mingw64\\bin\\g++.exe   -g -std=gnu++20 -o CMakeFiles\\sandbox.dir\\main.cpp.obj -c C:\\Users\\aryas\\OneDrive\\Desktop\\C++Projects\\pantrkd\\sandbox\\main.cpp",
-  "file": "C:/Users/aryas/OneDrive/Desktop/C++Projects/pantrkd/sandbox/main.cpp",
-  "output": "CMakeFiles/sandbox.dir/main.cpp.obj"
-}
-]
