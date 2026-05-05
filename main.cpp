@@ -285,25 +285,7 @@ class Scheduler {
 };
 
 int main(int argc, char** argv) {
-    CourseData cop_dummy1{"COP", Teacher{"Tim", "Bob"}, 1, TimeStamp{12, 30},
-                          TimeStamp{13, 45}};
-    CourseData cop_dummy2{"COP", Teacher{"Jim", "Sob"}, 1, TimeStamp{14, 0},
-                          TimeStamp{15, 40}};
-    CourseData cot_dummy1{"COT", Teacher{"Lim", "Nom"}, 1, TimeStamp{14, 5},
-                          TimeStamp{15, 45}};
-    CourseData cot_dummy2{"COT", Teacher{"Stim", "Murmer"}, 1, TimeStamp{2, 5},
-                          TimeStamp{3, 45}};
-
-    std::vector<std::string> courses_to_query = {"COT", "COP"};
-    Scheduler s{cop_dummy1, cop_dummy2, cot_dummy1,
-                cot_dummy2};
-    // in the future this will take query objects that each contain a predicate based on what the course data entails.
-    // notice how we are only passing the course name as strings my goal is to have something like
-    // s.permute_courses(QueryByName{"COT", "COP"}, QueryByValidTimeRange{TimeStamp{0, 0}, TimeStamp{10, 30}});
-    auto possibilities = s.permute_courses("COT", "COP");
-    for (const auto& p : possibilities) {
-        print_queries(p);
-    }
+    std::cout << "HI";
 
     return 0;
 }

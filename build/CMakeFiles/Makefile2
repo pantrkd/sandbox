@@ -53,16 +53,16 @@ RM = C:\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm
+CMAKE_SOURCE_DIR = C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm\build
+CMAKE_BINARY_DIR = C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox\build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/scheduler_algorithm.dir/all
+all: CMakeFiles/sandbox.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/scheduler_algorithm.dir/clean
+clean: CMakeFiles/sandbox.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/scheduler_algorithm.dir
+# Target rules for target CMakeFiles/sandbox.dir
 
 # All Build rule for target.
-CMakeFiles/scheduler_algorithm.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scheduler_algorithm.dir\build.make CMakeFiles/scheduler_algorithm.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scheduler_algorithm.dir\build.make CMakeFiles/scheduler_algorithm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm\build\CMakeFiles --progress-num=1,2 "Built target scheduler_algorithm"
-.PHONY : CMakeFiles/scheduler_algorithm.dir/all
+CMakeFiles/sandbox.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sandbox.dir\build.make CMakeFiles/sandbox.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sandbox.dir\build.make CMakeFiles/sandbox.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox\build\CMakeFiles --progress-num=1,2 "Built target sandbox"
+.PHONY : CMakeFiles/sandbox.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/scheduler_algorithm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/scheduler_algorithm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm\build\CMakeFiles 0
-.PHONY : CMakeFiles/scheduler_algorithm.dir/rule
+CMakeFiles/sandbox.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/sandbox.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox\build\CMakeFiles 0
+.PHONY : CMakeFiles/sandbox.dir/rule
 
 # Convenience name for target.
-scheduler_algorithm: CMakeFiles/scheduler_algorithm.dir/rule
-.PHONY : scheduler_algorithm
+sandbox: CMakeFiles/sandbox.dir/rule
+.PHONY : sandbox
 
 # clean rule for target.
-CMakeFiles/scheduler_algorithm.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scheduler_algorithm.dir\build.make CMakeFiles/scheduler_algorithm.dir/clean
-.PHONY : CMakeFiles/scheduler_algorithm.dir/clean
+CMakeFiles/sandbox.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sandbox.dir\build.make CMakeFiles/sandbox.dir/clean
+.PHONY : CMakeFiles/sandbox.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -56,10 +56,10 @@ RM = C:\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm
+CMAKE_SOURCE_DIR = C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm\build
+CMAKE_BINARY_DIR = C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm\build\CMakeFiles C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox\build\CMakeFiles C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aryas\OneDrive\Desktop\C++Projects\scheduler_algorithm\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\aryas\OneDrive\Desktop\C++Projects\pantrkd\sandbox\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named scheduler_algorithm
+# Target rules for targets named sandbox
 
 # Build rule for target.
-scheduler_algorithm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scheduler_algorithm
-.PHONY : scheduler_algorithm
+sandbox: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sandbox
+.PHONY : sandbox
 
 # fast build rule for target.
-scheduler_algorithm/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scheduler_algorithm.dir\build.make CMakeFiles/scheduler_algorithm.dir/build
-.PHONY : scheduler_algorithm/fast
+sandbox/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sandbox.dir\build.make CMakeFiles/sandbox.dir/build
+.PHONY : sandbox/fast
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scheduler_algorithm.dir\build.make CMakeFiles/scheduler_algorithm.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sandbox.dir\build.make CMakeFiles/sandbox.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -141,7 +141,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scheduler_algorithm.dir\build.make CMakeFiles/scheduler_algorithm.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sandbox.dir\build.make CMakeFiles/sandbox.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -149,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scheduler_algorithm.dir\build.make CMakeFiles/scheduler_algorithm.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sandbox.dir\build.make CMakeFiles/sandbox.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... scheduler_algorithm
+	@echo ... sandbox
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
